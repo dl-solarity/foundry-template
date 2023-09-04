@@ -1,5 +1,8 @@
 name: "checks"
 
+env:
+  FOUNDRY_PROFILE: ci
+
 on:
   push:
     branches:

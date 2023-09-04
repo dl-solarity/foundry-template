@@ -5,6 +5,10 @@ description: setup
 runs:
   using: composite
   steps:
+    - name: Setup foundry
+      uses: foundry-rs/foundry-toolchain@v1
+      with:
+        version: nightly
     - name: Setup node
       uses: actions/setup-node@v3
       with:
