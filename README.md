@@ -4,7 +4,7 @@ Template foundry repository for ad-hoc smart contracts development.
 
 ### How to use
 
-The template works out of the box. To clean up the repo, you may need to delete the mock contracts, tests and scripts.
+The template works out of the box. To clean up the repo, you may need to delete the mock contracts and tests.
 
 #### Test
 
