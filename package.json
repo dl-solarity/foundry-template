@@ -11,7 +11,7 @@
     "coverage": "forge coverage",
     "gas": "forge test --gas-report",
     "clean": "forge clean",
-    "test": "forge test",
+    "test": "forge test -vv",
     "private-network": "anvil",
     "private-network-fork": ". ./.env && anvil --fork-url https://mainnet.infura.io/v3/${INFURA_KEY}",
     "deploy-localhost": ". ./.env && forge script scripts/deploy.s.sol --fork-url http://localhost:8545 --broadcast",
