@@ -2,6 +2,26 @@
 
 Template foundry repository for ad-hoc smart contracts development.
 
+### How to install
+
+First, install `foundryup` (foundry toolchain installer)
+
+```bash
+curl -L https://foundry.paradigm.xyz | bash
+```
+
+Second, install Foundry itself. This will download `forge`, `cast`, `anvil`, and `chisel` binaries
+
+```bash
+foundryup
+```
+
+Third, use `npm` and `forge` to install the local dependencies
+
+```bash
+npm install && forge install
+```
+
 ### How to use
 
 The template works out of the box. To clean up the repo, you may need to delete the mock contracts and tests.
