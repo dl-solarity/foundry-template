@@ -17,3 +17,6 @@ runs:
     - name: Install packages
       run: npm install
       shell: bash
+    - name: Install libs
+      run: npm run forge-install
+      shell: bash

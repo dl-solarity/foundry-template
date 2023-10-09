@@ -3,7 +3,7 @@ pragma solidity ^0.8.20;
 
 import {Test} from "@forge-std/Test.sol";
 
-import {ERC20Mock} from "../../../contracts/mock/tokens/ERC20Mock.sol";
+import {ERC20Mock} from "@contracts/mock/tokens/ERC20Mock.sol";
 
 contract ERC20MockTest is Test {
     address constant SOME_ADDR = 0x0000000000000000000000000000000000000001;

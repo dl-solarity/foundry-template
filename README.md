@@ -22,6 +22,9 @@ Third, use `npm` and `forge` to install the local dependencies
 npm install && forge install
 ```
 
+#### Or with Docker
+It is recommended to use the VSCode Dev Container for development. You can do this by opening the Command Palette `(Ctrl+Shift+P)` and selecting the `Dev Containers: Rebuild and Reopen in Container command`.
+
 ### How to use
 
 The template works out of the box. To clean up the repo, you may need to delete the mock contracts and tests.

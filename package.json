@@ -5,10 +5,11 @@
   "author": "Distributed Lab",
   "description": "",
   "scripts": {
-    "install": "npx husky install",
-    "postinstall": "forge install",
+    "preinstall": "npx husky install",
+    "forge-install": "make forge-install",
     "compile": "forge build",
     "coverage": "forge coverage",
+    "coverage-lcov": "forge coverage --report lcov",
     "gas": "forge test --gas-report",
     "clean": "forge clean",
     "test": "forge test -vv",
