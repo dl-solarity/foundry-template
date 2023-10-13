@@ -14,7 +14,7 @@
         }
       },
       "extensions": [
-        "JuanBlanco.solidity",
+        "NomicFoundation.hardhat-solidity",
         "streetsidesoftware.code-spell-checker",
         "tamasfe.even-better-toml",
         "ms-vscode.makefile-tools",

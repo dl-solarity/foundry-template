@@ -25,7 +25,7 @@ contract Deploy is Script {
     }
 }
 
-// Use PRIVATE_KEY from envil logs
+// Use PRIVATE_KEY from anvil logs
 
 // source .env && anvil
 // source .env && forge script scripts/deploy.s.sol --fork-url http://localhost:8545 --broadcast
