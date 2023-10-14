@@ -1,0 +1,25 @@
+{
+  "build": { "dockerfile": "Dockerfile" },
+
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "git.detectSubmodules": false,
+        "solidity.compileUsingRemoteVersion": "v0.8.20+commit.a1b79de6",
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "/bin/bash"
+          }
+        }
+      },
+      "extensions": [
+        "NomicFoundation.hardhat-solidity",
+        "streetsidesoftware.code-spell-checker",
+        "tamasfe.even-better-toml",
+        "ms-vscode.makefile-tools",
+        "ryanluker.vscode-coverage-gutters"
+      ]
+    }
+  }
+}
