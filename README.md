@@ -16,13 +16,14 @@ Second, install Foundry itself. This will download `forge`, `cast`, `anvil`, and
 foundryup
 ```
 
-Third, use `npm` and `forge` to install the local dependencies
+Third, use `npm` to install local dependencies
 
 ```bash
-npm install && forge install
+npm install && npm run forge-install
 ```
 
 #### Or with Docker
+
 It is recommended to use the VSCode Dev Container for development. You can do this by opening the Command Palette `(Ctrl+Shift+P)` and selecting the `Dev Containers: Rebuild and Reopen in Container command`.
 
 ### How to use
