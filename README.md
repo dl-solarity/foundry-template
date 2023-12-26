@@ -30,6 +30,8 @@ It is recommended to use the VSCode Dev Container for development. You can do th
 
 The template works out of the box. To clean up the repo, you may need to delete the mock contracts and tests.
 
+Also check out relevant dependencies in the `Makefile`.
+
 #### Test
 
 To run the tests, execute the following command:

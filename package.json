@@ -17,24 +17,22 @@
     "private-network-fork": ". ./.env && anvil --fork-url https://mainnet.infura.io/v3/${INFURA_KEY}",
     "deploy-localhost": ". ./.env && forge script scripts/deploy.s.sol --fork-url http://localhost:8545 --broadcast",
     "deploy-goerli": ". ./.env && forge script scripts/deploy.s.sol --rpc-url https://goerli.infura.io/v3/${INFURA_KEY} --private-key ${PRIVATE_KEY} --broadcast --verify -vvvv",
-    "generate-types": "typechain --discriminate-types --target ethers-v5 --out-dir generated-types 'out/**/*.json'",
+    "generate-types": "typechain --discriminate-types --target ethers-v6 --out-dir generated-types 'out/**/*.json'",
     "generate-docs": "forge doc",
     "lint-fix": "npm run lint-sol-fix && npm run lint-json-fix",
     "lint-json-fix": "prettier --write \"./**/*.json\"",
     "lint-sol-fix": "prettier --write \"contracts/**/*.sol\""
   },
   "devDependencies": {
-    "@typechain/ethers-v5": "^10.1.0",
-    "@typechain/truffle-v5": "^8.0.1",
-    "@typechain/web3-v1": "^6.0.1",
-    "husky": "^7.0.2",
-    "prettier": "^2.7.1",
-    "prettier-plugin-solidity": "^1.0.0",
-    "solhint": "^3.3.7",
-    "solhint-plugin-prettier": "^0.0.5",
-    "ts-node": "^10.9.1",
+    "@typechain/ethers-v6": "^0.5.1",
+    "husky": "^8.0.0",
+    "prettier": "^3.1.1",
+    "prettier-plugin-solidity": "^1.3.1",
+    "solhint": "^4.0.0",
+    "solhint-plugin-prettier": "^0.1.0",
+    "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
-    "typechain": "^8.1.0",
-    "typescript": "^5.0.4"
+    "typechain": "^8.3.2",
+    "typescript": "^5.3.3"
   }
 }
