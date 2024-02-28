@@ -20,7 +20,6 @@ remappings = [
 ]
 
 [rpc_endpoints]
-goerli = "https://goerli.infura.io/v3/${INFURA_KEY}"
 sepolia = "https://sepolia.infura.io/v3/${INFURA_KEY}"
 chapel = "https://data-seed-prebsc-1-s1.binance.org:8545"
 bsc = "https://bsc-dataseed.binance.org/"
@@ -28,7 +27,6 @@ ethereum = "https://mainnet.infura.io/v3/${INFURA_KEY}"
 
 [etherscan]
 mainnet = { key = "${ETHERSCAN_KEY}" }
-goerli = { key = "${ETHERSCAN_KEY}" }
 sepolia = { key = "${ETHERSCAN_KEY}" }
 bsc = { key = "${BSCSCAN_KEY}" }
 chapel = { key = "${BSCSCAN_KEY}", url = "https://api-testnet.bscscan.com/" }
