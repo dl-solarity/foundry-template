@@ -1,4 +1,4 @@
-# Foundry template 
+# Foundry template
 
 Template foundry repository for ad-hoc smart contracts development.
 
@@ -16,10 +16,10 @@ Second, install Foundry itself. This will download `forge`, `cast`, `anvil`, and
 foundryup
 ```
 
-Third, use `npm` to install local dependencies
+Third, use `make` to install local dependencies:
 
 ```bash
-npm install && npm run forge-install
+make install
 ```
 
 #### Or with Docker
@@ -37,14 +37,13 @@ Also check out relevant dependencies in the `Makefile`.
 To run the tests, execute the following command:
 
 ```bash
-npm run test
+make test
 ```
 
 Or to see the coverage, run:
 
 ```bash
-npm run coverage
-
+make coverage
 ```
 
 #### Local deployment
@@ -52,8 +51,8 @@ npm run coverage
 To deploy the contracts locally, run the following commands (in the different terminals):
 
 ```bash
-npm run private-network
-npm run deploy-local
+make private-network
+make deploy-local
 ```
 
 ### Other niceties

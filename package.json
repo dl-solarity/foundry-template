@@ -5,23 +5,7 @@
   "author": "Distributed Lab",
   "description": "",
   "scripts": {
-    "prepare": "npx husky",
-    "forge-install": "make forge-install",
-    "compile": "forge build",
-    "coverage": "forge coverage",
-    "coverage-lcov": "forge coverage --report lcov",
-    "gas": "forge test --gas-report",
-    "clean": "forge clean",
-    "test": "forge test -vv",
-    "private-network": "anvil",
-    "private-network-fork": ". ./.env && anvil --fork-url https://mainnet.infura.io/v3/${INFURA_KEY}",
-    "deploy-localhost": ". ./.env && forge script scripts/deploy.s.sol --fork-url http://localhost:8545 --broadcast",
-    "deploy-goerli": ". ./.env && forge script scripts/deploy.s.sol --rpc-url https://goerli.infura.io/v3/${INFURA_KEY} --private-key ${PRIVATE_KEY} --broadcast --verify -vvvv",
-    "generate-types": "typechain --discriminate-types --target ethers-v6 --out-dir generated-types 'out/**/*.json'",
-    "generate-docs": "forge doc",
-    "lint-fix": "npm run lint-sol-fix && npm run lint-json-fix",
-    "lint-json-fix": "prettier --write \"./**/*.json\"",
-    "lint-sol-fix": "prettier --write \"contracts/**/*.sol\""
+    "prepare": "husky"
   },
   "devDependencies": {
     "@typechain/ethers-v6": "^0.5.1",
