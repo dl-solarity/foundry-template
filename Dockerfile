@@ -1,6 +1,4 @@
-FROM ghcr.io/foundry-rs/foundry:latest as foundry
-
-RUN apk update
+FROM ghcr.io/foundry-rs/foundry:latest AS foundry
 
 FROM node:latest
 

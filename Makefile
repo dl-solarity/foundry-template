@@ -6,12 +6,12 @@ install:; make forge-install && npm install
 
 forge-install:
 	rm -rfv lib \
-	&& forge install --no-git foundry-rs/forge-std@v1.7.6 \
-	&& forge install --no-git OpenZeppelin/openzeppelin-contracts@v5.0.1 \
-	&& forge install --no-git OpenZeppelin/openzeppelin-contracts-upgradeable@v5.0.1 \
-	&& forge install --no-git dl-solarity/solidity-lib@2.7.0
+	&& forge install --no-git foundry-rs/forge-std@v1.9.7 \
+	&& forge install --no-git OpenZeppelin/openzeppelin-contracts@v5.3.0 \
+	&& forge install --no-git OpenZeppelin/openzeppelin-contracts-upgradeable@v5.3.0 \
+	&& forge install --no-git dl-solarity/solidity-lib@3.1.0
 
-# Developement commands
+# Development commands
 
 compile:; forge build
 
@@ -37,7 +37,7 @@ deploy-goerli:; forge script scripts/deploy.s.sol --rpc-url https://goerli.infur
 
 # Types and docs commands
 
-generate-types:; typechain --discriminate-types --target ethers-v6 --out-dir generated-types "out/**/*.json"
+generate-types:; ARTIFACTS=$(find out -type f -name "out/**/*.json" | grep -v "out/build-info/") && npx typechain --discriminate-types --target ethers-v6 --out-dir generated-types ${ARTIFACTS}
 
 generate-docs:; forge doc
 
