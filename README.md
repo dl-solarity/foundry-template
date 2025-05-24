@@ -24,7 +24,7 @@ make install
 
 #### Or with Docker
 
-It is recommended to use the VSCode Dev Container for development. You can do this by opening the Command Palette `(Ctrl+Shift+P)` and selecting the `Dev Containers: Rebuild and Reopen in Container command`.
+It is recommended to use the VSCode `Dev Containers` extension for development. After installing it, open the Command Palette `(Ctrl+Shift+P)` and select the `Dev Containers: Rebuild and Reopen in Container` command.
 
 ### How to use
 
@@ -52,7 +52,7 @@ To deploy the contracts locally, run the following commands (in the different te
 
 ```bash
 make private-network
-make deploy-local
+make deploy-localhost
 ```
 
 ### Other niceties

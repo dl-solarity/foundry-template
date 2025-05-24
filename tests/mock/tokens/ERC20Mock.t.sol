@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
+pragma solidity ^0.8.28;
 
 import {Test} from "@forge-std/Test.sol";
 
@@ -14,7 +14,7 @@ contract ERC20MockTest is Test {
         token = new ERC20Mock("Mock", "Mock", 18);
     }
 
-    function test_Decimals() public {
+    function test_Decimals() public view {
         assertEq(token.decimals(), 18);
     }
 
