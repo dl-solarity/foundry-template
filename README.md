@@ -22,10 +22,6 @@ Third, use `make` to install local dependencies:
 make install
 ```
 
-#### Or with Docker
-
-It is recommended to use the VSCode `Dev Containers` extension for development. After installing it, open the Command Palette `(Ctrl+Shift+P)` and select the `Dev Containers: Rebuild and Reopen in Container` command.
-
 ### How to use
 
 The template works out of the box. To clean up the repo, you may need to delete the mock contracts and tests.
@@ -57,6 +53,6 @@ make deploy-localhost
 
 ### Other niceties
 
-- The template comes with presetup `prettier` and `solhint` that lint the project via `husky` before compilation hook.
+- The template comes with presetup `prettier` and `slippy` that lint the project via `husky` before compilation hook.
 - The `.env.example` file is provided to check what is required as ENVs
 - Preinstalled `@openzeppelin/contracts` and `@solarity/solidity-lib`
